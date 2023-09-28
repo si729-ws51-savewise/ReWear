@@ -1,6 +1,6 @@
 import { ApplicationConfig, importProvidersFrom } from "@angular/core";
 import { firebaseProviders } from "./firebase.config";
-import { routes } from "./app-routing";
+import { routes } from "./app-routing.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideRouter } from "@angular/router";
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';

@@ -1,0 +1,70 @@
+<p>
+    <mat-toolbar style="background-color:deeppink; color:white;">
+        <span>Post a new product</span>
+    </mat-toolbar>
+</p>
+
+<mat-tab-group>
+    <mat-tab label="Details">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Stock</mat-label>
+            <input type="number" matInput>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Branch</mat-label>
+            <mat-select>
+                <mat-option value="one">Nike</mat-option>
+                <mat-option value="two">Adidas</mat-option>
+                <mat-option value="three">Reebok</mat-option>
+                <mat-option value="four">GAP</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Color</mat-label>
+            <input type="color" matInput>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Type</mat-label>
+            <mat-select>
+                <mat-option value="one">shirt</mat-option>
+                <mat-option value="two">pants</mat-option>
+                <mat-option value="three">shorts</mat-option>
+                <mat-option value="four">cap</mat-option>
+                <mat-option value="five">sweater</mat-option>
+                <mat-option value="six">sneakers</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Price</mat-label>
+            <input matInput type="number" class="example-right-align" placeholder="0">
+            <span matTextPrefix>$&nbsp;</span>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Description</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+    </mat-tab>
+    <mat-tab class="confirm-section" label="Confirm">
+        <mat-card class="new-post-card">
+            <mat-card-header>
+                <mat-card-title>Nike basic shirt for men</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>Original Nike shirt, new summer collection 2023</p>
+                <p>White</p>
+                <p>Nike</p>
+                <p>Shirt</p>
+                <p>$50.00</p>
+
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button color="primary" >Confirm</button>
+                <button mat-button color="warn">Cancel</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-tab>
+</mat-tab-group>
